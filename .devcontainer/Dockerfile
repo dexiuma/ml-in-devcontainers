@@ -1,9 +1,9 @@
 # Build: sudo docker build -t <project_name> .
 # Run: sudo docker run -v $(pwd):/workspace/project --gpus all -it --rm <project_name>
 
-FROM nvidia/cuda:11.8.0-base-ubuntu22.04
+FROM nvidia/cuda:12.8.0-base-ubuntu24.04
 
-ENV PYTHON_VERSION=3.10
+ENV PYTHON_VERSION=3.12
 
 ENV PATH /opt/conda/bin:$PATH
 ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
